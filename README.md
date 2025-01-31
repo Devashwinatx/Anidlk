@@ -24,27 +24,27 @@ SUPPORT GROUP CHAT - @BillaCore & @fn_network_back
 
 3. Configure the `config.py` or  `.env` file with your credentials.
 
-(a) For Config.py Vars -:
+#(a) For Config.py Vars -:
 
-# Telegram bot token
+Telegram bot token
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_BOT_TOKEN")
 
-# Crunchyroll login credentials
+Crunchyroll login credentials
 CRUNCHYROLL_USERNAME = os.getenv("CRUNCHYROLL_USERNAME", "your_crunchyroll_username")
 
 CRUNCHYROLL_PASSWORD = os.getenv("CRUNCHYROLL_PASSWORD", "your_crunchyroll_password")
 
-# User-Agent for Crunchyroll API (optional)
+User-Agent for Crunchyroll API (optional)
 CRUNCHYROLL_USER_AGENT = os.getenv("CRUNCHYROLL_USER_AGENT", "CrunchyrollBot/1.0")
 
-# Path to DRM decryption tools
+Path to DRM decryption tools
 MP4DECRYPT_PATH = os.getenv("MP4DECRYPT_PATH", "/path/to/mp4decrypt")
 
 FFMPEG_PATH = os.getenv("FFMPEG_PATH", "/usr/bin/ffmpeg")
 
 MKVMERGE_PATH = os.getenv("MKVMERGE_PATH", "/usr/bin/mkvmerge")
 
-(b) If .env is USED its Vars SHOULD be like that :-
+#(b) If .env is USED its Vars SHOULD be like that :-
 
 TELEGRAM_TOKEN=your_bot_token
 
@@ -69,7 +69,7 @@ MKVMERGE_PATH=/usr/bin/mkvmerge
 
 #Here’s the list of commands available for the Advanced Billa Crunchyroll Bot :-
 
-List of Commands:
+#List of Cmds:
 `/start`
 
 Description: Starts the bot and provides a welcome message with a brief description of how the bot works.
@@ -140,15 +140,15 @@ Quality Options: The bot supports different video quality options, including:
 Error Handling: If an invalid URL or quality option is provided, the bot will respond with an error message and guide the user accordingly.
 
 
-Feel Free To Contact If have issues over it & if you are happy with my work consider to Donate Me :- {TELEGRAM}
+#Feel Free To Contact If have issues over it & if you are happy with my work consider to Donate Me :- {TELEGRAM}
 `@ifeelraam` - `THE DEVLOPER OF THIS BOT AND SOURCE CODE`
 
 # I WOULD like to give special thanks to the `crunchpyroll devs and its repected team and owners for their Api`
 (Already open source In Github)
 
-if issues persists related to this create issues in branch Or Wannaa To Contribute in this Repo ?
+#if issues persists related to this create issues in branch Or Wannaa To Contribute in this Repo ?
 
-pull issues or pull requests to merge if i would Satisfy withe the made changes i will push your contributions.
+#pull issues or pull requests to merge if i would Satisfy withe the made changes i will push your contributions.
 ( I"ll never forget to give You credit For contributions made by you there)
 
 `Good to Go See You Ahead !!`
