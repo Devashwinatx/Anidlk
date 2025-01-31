@@ -4,7 +4,7 @@ import logging
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 from bot.downloader import download_series
-from bot.utils import to_small_caps, validate_url
+from bot.utils import to_small_caps
 from config import TELEGRAM_TOKEN  # Import the bot token from config.py
 
 # Setup logging
