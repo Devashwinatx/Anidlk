@@ -24,7 +24,7 @@ SUPPORT GROUP CHAT - @BillaCore & @fn_network_back
 
 3. Configure the `config.py` or  `.env` file with your credentials.
 
-#(a) For Config.py Vars -:
+# (a) For Config.py Vars -:
 
 Telegram bot token
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_BOT_TOKEN")
@@ -44,7 +44,7 @@ FFMPEG_PATH = os.getenv("FFMPEG_PATH", "/usr/bin/ffmpeg")
 
 MKVMERGE_PATH = os.getenv("MKVMERGE_PATH", "/usr/bin/mkvmerge")
 
-#(b) If .env is USED its Vars SHOULD be like that :-
+# (b) If .env is USED its Vars SHOULD be like that :-
 
 TELEGRAM_TOKEN=your_bot_token
 
@@ -67,7 +67,7 @@ MKVMERGE_PATH=/usr/bin/mkvmerge
 
 
 
-#Here’s the list of commands available for the Advanced Billa Crunchyroll Bot :-
+# Here’s the list of commands available for the Advanced Billa Crunchyroll Bot :-
 
 #List of Cmds:
 `/start`
@@ -143,7 +143,7 @@ Error Handling: If an invalid URL or quality option is provided, the bot will re
 #Feel Free To Contact If have issues over it & if you are happy with my work consider to Donate Me :- {TELEGRAM}
 `@ifeelraam` - `THE DEVLOPER OF THIS BOT AND SOURCE CODE`
 
-# I WOULD like to give special thanks to the `crunchpyroll devs and its repected team and owners for their Api`
+# I WOULD like to give special thanks to the `crunchpyroll devs and its respected team and owners for their Api`
 (Already open source In Github)
 
 #if issues persists related to this create issues in branch Or Wannaa To Contribute in this Repo ?
