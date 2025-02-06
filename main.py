@@ -3,7 +3,7 @@ import logging
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 from bot.downloader import download_series
-from bot.utils import to_small_caps
+from bot.utils import to_small_caps, validate_crunchyroll_url  # Import validate_crunchyroll_url
 from config import TELEGRAM_TOKEN  # Import the bot token from config.py
 
 # Setup logging
@@ -32,8 +32,8 @@ def download(update: Update, context: CallbackContext):
         url = parts[0]
         selected_quality = parts[1]
 
-        # Validate the URL
-        if not validate_url(url):
+        # Validate the URL using the function from bot.utils
+        if not validate_crunchyroll_url(url):
             update.message.reply_text(to_small_caps("invalid url! please provide a valid crunchyroll series link."))
             return
 
