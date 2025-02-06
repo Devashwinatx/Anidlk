@@ -14,9 +14,11 @@ def to_small_caps(text: str) -> str:
     return ''.join(small_caps_map.get(c, c) for c in text)
 
 def validate_crunchyroll_url(url: str) -> bool:
-    """Validates whether the given URL is a valid Crunchyroll series link."""
-    # Regular expression to check if the URL is a Crunchyroll series URL (simplified for demonstration)
-    pattern = r"https://www\.crunchyroll\.com/series/[\w\-]+"
+    """
+    Validates whether the given URL is a valid Crunchyroll episode link (i.e., 'watch' URL).
+    """
+    # Regular expression to check if the URL is a Crunchyroll episode URL
+    pattern = r"https://www\.crunchyroll\.com/watch/[A-Z0-9]{8}/[\w\-]+"
     match = re.match(pattern, url)
     
     if match:
