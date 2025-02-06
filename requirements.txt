@@ -1,7 +1,8 @@
 python-telegram-bot==20.0
 crunpyroll
 ffmpeg-python==0.2.0
-mkvmerge==50.0.0
+mkvmerge
+pymkv2
 requests==2.28.1
 aiohttp==3.8.3
 cryptography==38.0.1
