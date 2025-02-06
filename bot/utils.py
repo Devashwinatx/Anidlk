@@ -1,4 +1,4 @@
-# import re
+import re  # This import is necessary for using regular expressions
 
 def to_small_caps(text: str) -> str:
     """Converts normal text to small caps (using Unicode characters)."""
