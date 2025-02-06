@@ -8,9 +8,6 @@ DEVICE_NAME = "RMX2170"
 DEVICE_TYPE = "realme RMX2170"
 DEVICE_ID = str(uuid4())
 
-WIDEVINE_UUID = "urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed"
-PLAYREADY_UUID = "urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95"
-
 def get_api_headers(headers: Optional[Dict] = None) -> Dict:
     """Generates and returns the API headers for Crunchyroll requests."""
     return {
