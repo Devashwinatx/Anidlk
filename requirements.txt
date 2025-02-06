@@ -1,5 +1,4 @@
 python-telegram-bot==20.0
-subprocess
 crunpyroll==0.1.0
 ffmpeg-python==0.2.0
 mkvmerge==50.0.0
