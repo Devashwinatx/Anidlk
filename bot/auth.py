@@ -1,12 +1,14 @@
 import requests
+from uuid import uuid4  # Import uuid4 to generate a unique device ID
 from config import CRUNCHYROLL_PASSWORD, CRUNCHYROLL_USERNAME, CRUNCHYROLL_USER_AGENT
+from typing import Optional, Dict
 
 # Constants
 PUBLIC_TOKEN = "d2piMV90YThta3Y3X2t4aHF6djc6MnlSWlg0Y0psX28yMzRqa2FNaXRTbXNLUVlGaUpQXzU="
 APP_VERSION = "3.59.0"
 DEVICE_NAME = "RMX2170"
 DEVICE_TYPE = "realme RMX2170"
-DEVICE_ID = str(uuid4())
+DEVICE_ID = str(uuid4())  # Generate a unique device ID using uuid4()
 
 WIDEVINE_UUID = "urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed"
 PLAYREADY_UUID = "urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95"
