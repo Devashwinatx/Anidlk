@@ -50,9 +50,9 @@ def main():
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(CommandHandler("download", download))
-    dp.add_handler(CommandHandler("download_series", downloadseries))
-    dp.add_handler(MessageHandler(Filters.text & ~Filters.command, download))
+    dp.add_handler(CommandHandler("download", download))  # Handle /download command
+    dp.add_handler(CommandHandler("download_series", download))  # Handle /download_series command
+    dp.add_handler(MessageHandler(Filters.text & ~Filters.command, download))  # Handle text messages that aren't commands
 
     updater.start_polling()
     updater.idle()
