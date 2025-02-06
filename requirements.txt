@@ -1,5 +1,5 @@
 python-telegram-bot==20.0
-crunpyroll==0.1.0
+crunpyroll
 ffmpeg-python==0.2.0
 mkvmerge==50.0.0
 requests==2.28.1
