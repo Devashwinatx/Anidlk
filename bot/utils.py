@@ -1,5 +1,4 @@
-# bot/utils.py
-import re
+# import re
 
 def to_small_caps(text: str) -> str:
     """Converts normal text to small caps (using Unicode characters)."""
