@@ -8,7 +8,7 @@ def authenticate_crunchyroll():
     Authenticates the user with Crunchyroll and returns the auth token.
     """
     try:
-        login_url = "https://api.crunchyroll.com/v1/authenticate"
+        login_url = "https://sso.crunchyroll.com/login"
         headers = {"User-Agent": CRUNCHYROLL_USER_AGENT}
         data = {
             "username": CRUNCHYROLL_USERNAME,
