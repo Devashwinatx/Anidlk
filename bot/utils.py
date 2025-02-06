@@ -1,4 +1,4 @@
-import re  # This import is necessary for using regular expressions
+import re
 
 def to_small_caps(text: str) -> str:
     """Converts normal text to small caps (using Unicode characters)."""
@@ -14,8 +14,8 @@ def to_small_caps(text: str) -> str:
 
 def validate_crunchyroll_url(url: str) -> bool:
     """Validates whether the given URL is a valid Crunchyroll series link."""
-    # Updated regular expression to handle various series URLs including dynamic IDs
-    pattern = r"https://www\.crunchyroll\.com/series/[\w\-]+/[\w\-]+"
+    # Updated regular expression to better match Crunchyroll URLs with dynamic series IDs
+    pattern = r"https://www\.crunchyroll\.com/series/[\w\-]+/[\w\-]+(?:/[^\s]+)?"
     match = re.match(pattern, url)
     
     if match:
