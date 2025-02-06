@@ -58,7 +58,7 @@ def main():
 
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("download", download))
-         dp.add_handler(CommandHandler("download_series", download))
+    dp.add_handler(CommandHandler("download_series", download))
     dp.add_handler(MessageHandler(Filters.text & ~Filters.command, download))
 
     updater.start_polling()
