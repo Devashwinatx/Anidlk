@@ -1,4 +1,3 @@
-# bot/downloader.py
 import os
 import subprocess
 import logging
@@ -16,10 +15,17 @@ def fetch_series_info(url: str, auth_token: str):
     """
     try:
         logger.info(f"Fetching series information for {url}")
-        # Example: We would need to extract episode ID and title from the URL here
-        # Assuming we have an API or a method to extract the necessary metadata from Crunchyroll.
-        episode_id = url.split('/')[4]  # Assuming 'https://www.crunchyroll.com/watch/EPISODE_ID/series_name'
-        series_name = url.split('/')[-1]  # Extracting series name from URL
+        # Updated: Handling series URLs that may contain both episode ID and slug
+        parts = url.split('/')
+        
+        # Extracting series information based on URL format
+        if len(parts) > 4:
+            episode_id = parts[4]  # Assuming 'https://www.crunchyroll.com/series/EPISODE_ID/series_name'
+            series_name = "/".join(parts[5:])  # Handle any slug-style title after the episode ID
+        else:
+            # If there is no episode ID, this could be a general series URL, not specific to an episode
+            raise ValueError("No specific episode ID found in URL.")
+        
         series_info = {"id": episode_id, "title": series_name}
         
         if not series_info:
