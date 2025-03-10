@@ -2,7 +2,7 @@
 import os
 
 # Telegram bot token (from BotFather)
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_BOT_TOKEN")  # Replace with your bot's token
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "6870847362:AAEUlF3uspyfjt3FHWUAWDLyvFPZolF0tDI")  # Replace with your bot's token
 
 # Crunchyroll login credentials (from environment variables or hardcoded if needed)
 CRUNCHYROLL_USERNAME = os.getenv("CRUNCHYROLL_USERNAME", "your_crunchyroll_username")  # Replace with your username
