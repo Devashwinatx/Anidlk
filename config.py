@@ -5,8 +5,8 @@ import os
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "6870847362:AAEUlF3uspyfjt3FHWUAWDLyvFPZolF0tDI")  # Replace with your bot's token
 
 # Crunchyroll login credentials (from environment variables or hardcoded if needed)
-CRUNCHYROLL_USERNAME = os.getenv("CRUNCHYROLL_USERNAME", "your_crunchyroll_username")  # Replace with your username
-CRUNCHYROLL_PASSWORD = os.getenv("CRUNCHYROLL_PASSWORD", "your_crunchyroll_password")  # Replace with your password
+CRUNCHYROLL_USERNAME = os.getenv("CRUNCHYROLL_USERNAME", "pessoa534@gmail.com")  # Replace with your username
+CRUNCHYROLL_PASSWORD = os.getenv("CRUNCHYROLL_PASSWORD", "noobslayer306")  # Replace with your password
 
 # Optional: User-Agent for Crunchyroll API
 CRUNCHYROLL_USER_AGENT = os.getenv("CRUNCHYROLL_USER_AGENT", "CrunchyrollBot/1.0")
