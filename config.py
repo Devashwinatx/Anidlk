@@ -12,6 +12,6 @@ CRUNCHYROLL_PASSWORD = os.getenv("CRUNCHYROLL_PASSWORD", "noobslayer306")  # Rep
 CRUNCHYROLL_USER_AGENT = os.getenv("CRUNCHYROLL_USER_AGENT", "CrunchyrollBot/1.0")
 
 # Paths to DRM decryption tools (set path to mp4decrypt, ffmpeg, and mkvmerge as needed)
-MP4DECRYPT_PATH = os.getenv("MP4DECRYPT_PATH", "/path/to/mp4decrypt")  # Adjust this path
+MP4DECRYPT_PATH = os.getenv("MP4DECRYPT_PATH", "/usr/local/bin/mp4decrypt")  # Adjust this path
 FFMPEG_PATH = os.getenv("FFMPEG_PATH", "/usr/bin/ffmpeg")  # Adjust this path
 MKVMERGE_PATH = os.getenv("MKVMERGE_PATH", "/usr/bin/mkvmerge")  # Adjust this path
